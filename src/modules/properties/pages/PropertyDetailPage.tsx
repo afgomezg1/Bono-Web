@@ -94,8 +94,9 @@ export default function PropertyDetailPage({ propertyIndex }: PropertyDetailPage
         {/* Stats cards */}
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
           <div className="rounded-xl border border-stone-200 bg-white p-4 text-center shadow-sm dark:border-stone-800 dark:bg-stone-900">
-            <svg className="mx-auto h-6 w-6 text-violet-600" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21" />
+            <svg className="mx-auto h-6 w-6 text-violet-600" viewBox="0 0 512 512" fill="currentColor">
+              <path d="M440 424V88h-88V13.005L88 58.522V424H16v32h86.9L352 490.358V120h56v336h88v-32Zm-120 29.642l-200-27.586V85.478L320 51Z" />
+              <path d="M256 232h32v64h-32z" />
             </svg>
             <p className="mt-2 text-2xl font-bold text-stone-900 dark:text-stone-100">{property.rooms}</p>
             <p className="text-xs text-stone-500 dark:text-stone-400">{property.rooms === 1 ? "Room" : "Rooms"}</p>
@@ -118,8 +119,8 @@ export default function PropertyDetailPage({ propertyIndex }: PropertyDetailPage
           </div>
 
           <div className="rounded-xl border border-stone-200 bg-white p-4 text-center shadow-sm dark:border-stone-800 dark:bg-stone-900">
-            <svg className={`mx-auto h-6 w-6 ${property.garage ? "text-emerald-600" : "text-stone-400"}`} fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H18.75m-7.5-9V6.375c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125V9M7.5 9h9" />
+            <svg className={`mx-auto h-6 w-6 ${property.garage ? "text-emerald-600" : "text-stone-400"}`} viewBox="0 0 24 24" fill="currentColor">
+              <path d="M4 22q-.825 0-1.412-.587T2 20V4q0-.825.588-1.412T4 2h16q.825 0 1.413.588T22 4v16q0 .825-.587 1.413T20 22zm5-8q-.425 0-.712-.288T8 13t.288-.712T9 12t.713.288T10 13t-.288.713T9 14m6 0q-.425 0-.712-.288T14 13t.288-.712T15 12t.713.288T16 13t-.288.713T15 14M5 11.1v6.6q0 .35.225.575t.575.225h.4q.35 0 .575-.225T7 17.7v-1.2h10v1.2q0 .35.225.575t.575.225h.4q.35 0 .575-.225T19 17.7v-6.6l-1.65-4.8q-.125-.35-.413-.575T16.3 5.5H7.7q-.35 0-.638.225T6.65 6.3zm2.65-1.6l.7-2h7.3l.7 2z" />
             </svg>
             <p className="mt-2 text-2xl font-bold text-stone-900 dark:text-stone-100">{property.garage ? "Yes" : "No"}</p>
             <p className="text-xs text-stone-500 dark:text-stone-400">Garage</p>
